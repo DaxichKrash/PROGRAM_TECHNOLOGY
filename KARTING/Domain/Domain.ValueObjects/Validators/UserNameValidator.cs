@@ -8,7 +8,7 @@ namespace Domain.ValueObjects.Validators;
 /// </summary>
 public class UserNameValidator : IValidator<string>
 {
-    public static int MAX_LENGTH => 50;  // По твоей схеме VARCHAR(50)
+    public static int MAX_LENGTH => 50;  // VARCHAR(50)
     public static int MIN_LENGTH => 2;   // Минимальное имя — 2 символа
 
     public void Validate(string value)
